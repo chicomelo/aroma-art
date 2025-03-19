@@ -1,0 +1,334 @@
+// main: "../main.less"
+.single-product{
+    div.product{
+        .onsale{
+            background-color: #dfa584;
+            border-radius: 20px;
+            border: none;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+        .woocommerce-product-gallery{
+            border: 1px solid #eeeeee;
+            border-radius: 32px;
+            overflow: hidden;
+
+            .woocommerce-product-gallery__trigger{
+                border-radius: 12px!important;
+            }
+        }
+
+        .product_title{
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+
+        p.price{
+            margin: 0 0 0 0!important;
+            ins{
+                margin: 0;
+                line-height: 1.2;
+            }
+            del{
+                opacity: 1;
+                .amount{
+                    display: block;
+                    font-size: 1.6rem;
+                    color: #999;
+                    font-weight: 400;
+                }
+            }
+            .amount{
+                text-align: left;
+                color: #c4a876;
+                font-size: 2.8rem;
+                font-weight: 600;
+            }
+        }
+        .preco-com-desconto{
+            color: #999;
+            font-size: 1.8rem;
+            text-align: left;
+            margin-bottom: 16px;
+            b{
+                color: #444;
+                font-weight: 700;
+            }
+        }
+        .stock{
+            display: none;
+        }
+        .cart{
+            padding-top: 1.41575em;
+            .quantity{
+                display: none;
+            }
+            .single_add_to_cart_button{
+                background-color: #c4a876;
+                color: #fff;
+                padding: 12px 42px;
+                transition: 0.3s all;
+                border-radius: 40px;
+                font-size: 1.8rem;
+                width: 100%;
+                display: inline-block;
+                &:hover{
+                    background-color: darken(#c4a876, 5%);
+                }
+            }
+
+        }
+
+        .containerCalculator{
+            border: 1px solid #eee;
+            background-color: #fff;
+            border-radius: 8px;
+            .iptCep{
+                outline: none;
+                background-color: #f6f6f6;
+                border: none;
+                box-shadow: none;
+                padding: 16px;
+                border-radius: 8px;
+            }
+        }
+
+        .product_meta{
+            display: none;
+        }
+
+        .woocommerce-tabs{
+            margin-bottom: 3.706325903em;
+            .woocommerce-Tabs-panel{
+                margin-bottom: 0;
+            }
+            .tabs{
+                li{
+                    a{
+                        color: #9aaabb;
+                        outline: none;
+                        font-size: 1.8rem;
+                    }
+                    &.active{
+                        a{
+                            color: #444;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .aromas_selecionados-wrapper{
+        tbody{
+            tr{
+                display: flex;
+                flex-direction: column;
+
+                td{
+                    background-color: transparent;
+                    &.wccpf_label{
+                        width: 100%;
+                        label{
+                            width: 100%;
+                        }
+                    }
+                    &.wccpf_value{
+                        .wccpf-field-layout-horizontal{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 10px;
+                            li{
+                                margin: 0;
+                                label.wcff-option-wrapper-label{
+                                    border: 2px solid #eee;
+                                    border-radius: 6px;
+                                    padding: 8px 16px;
+                                    cursor: pointer;
+                                    margin: 0;
+                                    transition: 0.3s all;
+                                    color: #555;
+                                    &:hover {
+                                        border-color: #ddd;
+                                    }
+                                    &.disabled{
+                                        background-color: #eee;
+                                        color: #ccc;
+                                        cursor: default;
+                                    }
+                                    &.active{
+                                        border-color: #c4a876;
+                                        background-color: #fff;
+                                        color: #333;
+                                        cursor: pointer;
+                                    }
+                                    input.wccpf-field{
+                                        display: none;
+                                        width: 0;
+                                        height: 0;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .storefront-sticky-add-to-cart{
+
+        .col-full{
+            width: 100%;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+        @media (min-width: 576px) {
+            .col-full{
+              max-width: 540px;
+              
+            }
+        }
+        @media (min-width: 768px) {
+        .col-full{
+            max-width: 680px;
+        }
+        }
+        @media (min-width: 992px) {
+        .col-full{
+            max-width: 920px;
+            
+        }
+        }
+        @media (min-width: 1200px) {
+        .col-full{
+            max-width: 1152px;
+        }
+        }
+        .storefront-sticky-add-to-cart__content{
+            .attachment-woocommerce_thumbnail{
+                border-radius: 12px;
+            }
+        }
+        .storefront-sticky-add-to-cart__content-product-info{
+            .storefront-sticky-add-to-cart__content-title{
+                font-size: 0;
+                strong{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .storefront-sticky-add-to-cart__content-price{
+            opacity: 1;
+            line-height: 1;
+            height: 38px;
+            display: block;
+            ins{
+                margin: 0;
+                line-height: 1;
+                height: 20px;
+            }
+            del{
+                opacity: 1;
+                .amount{
+                    font-size: 1.4rem;
+                    color: #999;
+                    font-weight: 400;
+                }
+            }
+            .amount{
+                display: block;
+                text-align: left;
+                color: #c4a876;
+                font-size: 2.1rem;
+                font-weight: 600;
+            }
+        }
+
+        .storefront-sticky-add-to-cart__content-button{
+            background-color: #c4a876;
+            color: #fff;
+            padding: 8px 32px;
+            transition: 0.3s all;
+            border-radius: 40px;
+            font-size: 1.6rem;
+            display: inline-block;
+            &:hover{
+                background-color: darken(#c4a876, 5%);
+            }
+        }
+
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .single-product{
+        div.product{
+            .onsale{
+                font-size: 1.2rem;
+            }
+
+            .woocommerce-product-gallery{
+                border-radius: 32px;
+    
+                .woocommerce-product-gallery__trigger{
+                    border-radius: 12px!important;
+                }
+            }
+    
+            .product_title{
+                font-size: 3.2rem;
+            }
+    
+            p.price{
+                del{
+                    .amount{
+                        font-size: 1.6rem;
+                    }
+                }
+                .amount{
+                    font-size: 2.8rem;
+                }
+            }
+
+            .preco-com-desconto{
+                font-size: 1.6rem;
+            }
+
+            .cart{
+                padding-top: 1.41575em;
+                .single_add_to_cart_button{
+                    padding: 10px 64px;
+                    border-radius: 40px;
+                    font-size: 1.8rem;
+                    width: auto;
+                }
+    
+            }
+
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1650px) {
+
+}

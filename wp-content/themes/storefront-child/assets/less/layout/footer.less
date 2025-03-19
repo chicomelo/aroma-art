@@ -1,0 +1,132 @@
+// main: "../main.less"
+.site{
+    .site-footer{
+        margin: 0;
+        padding: 0;
+        padding: 0px 0 124px 0;
+        background: url('../img/footer-bg.png') no-repeat bottom left;
+        background-size: 1000px;
+        background-color: #f6f6f6;
+
+        h4{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 32px;
+            margin-top: 52px;
+            text-align: center;
+        }
+        .menu-footer{
+            text-align: center;
+            .menu{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    a{
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                        color: #444444;
+                        transition: 0.3s all;
+                        padding: 8px;
+                        display: inline-block;
+                        &:hover{
+                            color: #c4a876;
+                        }
+                    }
+                }
+            }
+        }
+        .social__wrapper{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            a{
+                outline: none;
+                font-size: 1.6rem;
+                svg{
+                    width: 32px;
+                    fill: #444;
+                    transition: 0.3s all;
+                }
+                &:hover{
+                    svg{
+                        fill: #c4a876;
+                    }
+                }
+            }
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .copy{
+            text-align: center;
+            color: #999;
+            font-size: 1.6rem;
+            margin-top: 64px;
+        }
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .site{
+        .site-footer{
+            padding: 64px 0 164px 0;
+            background: url('../img/footer-bg.png') no-repeat bottom center;
+            background-color: #f6f6f6;
+    
+            h4{
+                font-size: 1.8rem;
+                margin-bottom: 32px;
+                margin-top: 0;
+                text-align: left;
+            }
+            .menu-footer{
+                text-align: left;
+                .menu{
+                    li{
+                        a{
+                            padding: 8px 0;
+                        }
+                        &.menu-item-98{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .social__wrapper{
+                gap: 20px;
+                justify-content: flex-start;
+                a{
+                    font-size: 1.6rem;
+                    padding: 8px 0;
+                    svg{
+                        width: 32px;
+                    }
+                }
+            }
+            .copy{
+                text-align: right;
+                font-size: 1.6rem;
+            }
+            img{
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .site{
+        .site-footer{
+            padding: 64px 0 164px 0;
+            h4{
+                font-size: 2.1rem;
+            }
+
+        }
+    }
+}

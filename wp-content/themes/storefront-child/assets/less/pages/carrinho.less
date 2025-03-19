@@ -1,0 +1,135 @@
+// main: "../main.less"
+
+.storefront-align-wide.storefront-full-width-content .hentry .entry-content .alignwide{
+    margin: 0;
+    padding: 0;
+}
+
+.woocommerce-cart{
+    .wp-block-woocommerce-cart{
+        .wp-block-woocommerce-empty-cart-block{
+            .wc-block-cart__empty-cart__title{
+                font-size: 2.4rem;
+                color: #444;
+                font-weight: 700;
+
+                &::before{
+                    display: none;
+                }
+            }
+            .wp-block-separator{
+                display: none;
+            }
+            .wp-block-button__link{
+                background-color: #c4a876;
+                color: #fff;
+                padding: 12px 42px;
+                transition: 0.3s all;
+                border-radius: 40px;
+                font-size: 1.8rem;
+                width: 100%;
+                display: inline-block;
+                &:hover{
+                    background-color: darken(#c4a876, 5%);
+                }
+            }
+        }
+
+        .wp-block-woocommerce-filled-cart-block{
+            table.wc-block-cart-items{
+                .wc-block-cart-items__header{
+                    text-transform: none;
+                    font-size: 1.6rem;
+                }
+                .wc-block-cart-items__row{
+                    .wc-block-cart-item__product{
+                        .wc-block-cart-item__wrap{
+                            .wc-block-components-product-name{
+                                color: #c4a876;
+                                text-decoration: none;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            .wc-block-cart-item__prices{
+                                display: none;
+                                .price{
+                                    .wc-block-components-product-price__regular{
+                                    }
+                                    .wc-block-components-product-price__value{
+                                    }
+                                }
+                            }
+                            .wc-block-components-product-badge{
+                                display: none;
+                            }
+                            .wc-block-components-product-metadata{
+                                display: none;
+                            }
+                        }
+                    }
+                    .wc-block-cart-item__total{
+                        .wc-block-components-product-badge{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .wp-block-woocommerce-cart-totals-block{
+            .wp-block-woocommerce-cart-order-summary-block{
+                .wc-block-cart__totals-title{
+                    text-transform: none;
+                    font-size: 1.6rem;
+                }
+              
+            }
+            .wc-block-cart__submit{
+                .wc-block-cart__submit-container{
+                    .wc-block-components-button{
+                        background-color: #c4a876;
+                        color: #fff;
+                        padding: 12px 12px;
+                        transition: 0.3s all;
+                        border-radius: 40px;
+                        font-size: 1.8rem;
+                        width: 100%;
+                        text-decoration: none;
+                        margin-top: 2.4em;
+                        &:hover{
+                            background-color: darken(#c4a876, 5%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .woocommerce-cart{
+        .wp-block-woocommerce-cart{
+            .wp-block-woocommerce-empty-cart-block{
+
+                .wp-block-button__link{
+                    padding: 10px 64px;
+                    border-radius: 40px;
+                    font-size: 1.8rem;
+                    width: auto;
+                }
+            }
+        }
+    
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1650px) {
+
+}

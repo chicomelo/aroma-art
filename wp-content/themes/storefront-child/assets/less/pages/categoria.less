@@ -1,0 +1,88 @@
+// main: "../main.less"
+.storefront-full-width-content{
+    .site-content{
+        .woocommerce-products-header{
+            padding: 0;
+            padding-bottom: 42px;
+            .page-title{
+                font-size: 3.2rem;
+                margin:0;
+            }
+        }
+
+        .storefront-sorting{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .woocommerce-ordering{
+                margin: 0;
+                float: none;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .woocommerce-result-count{
+                margin: 0;
+                float: none;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .woocommerce-pagination{
+                float: none;
+                display: none;
+            }
+
+            & ~ .storefront-sorting{
+                .woocommerce-ordering, .woocommerce-result-count{
+                    display: none;
+                }
+                .woocommerce-pagination{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .page-numbers{
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        li{
+                            margin: 0;
+                            .page-numbers{
+                                border: 1px solid #eee;
+                                border-radius: 8px;
+                                background-color: #fff;
+                                font-size: 1.6rem;
+                                transition: 0.3s all;
+                                outline: none;
+                                &.current{
+                                    background-color: #9aaabb;
+                                    border-color: #9aaabb;
+                                    color: #fff;
+                                    &:hover{
+                                        border-color: #9aaabb;
+                                    }
+                                }
+                                &:hover{
+                                    border-color: #ddd;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 1200px) {
+
+
+}
+
+@media (min-width: 1650px) {
+
+}
